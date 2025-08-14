@@ -1,0 +1,16 @@
+{
+  "name": "medtime_iot",
+  "version": "1.0.0",
+  "main": "cekAlarm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "firebase-admin": "^13.4.0",
+    "mqtt": "^5.14.0"
+  }
+}
