@@ -1,13 +1,13 @@
 const admin = require("firebase-admin");
 const mqtt = require("mqtt");
-const serviceAccount = require("./pkm-medreminder-firebase-adminsdk-fbsvc-f4a8d15df3.json");
+const serviceAccount = require("./pkm-medreminder-firebase-adminsdk-fbsvc-269f52353d.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
 });
 
 const db = admin.firestore();
-const client = mqtt.connect("mqtt://broker.emqx.io");
+const client = mqtt.connect("mqtt://test.mosquitto.org:1883");
 
 let remindersData = []; // nyimpen data reminders di memori
 let sudahDikirim = new Set(); // nyimpen waktu yang sudah dikirim ke mqtt, biar ga kekirim terus-terusan

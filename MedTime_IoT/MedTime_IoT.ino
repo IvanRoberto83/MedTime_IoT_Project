@@ -4,14 +4,14 @@
 #include <DFRobotDFPlayerMini.h>
 
 // WiFi
-const char *ssid = // Isi dengan nama Wi-Fi/Tethering Anda
-const char *password = // Isi dengan password Wi-Fi/Tethering Anda
+const char *ssid = //nama wifi;
+const char *password = //password wifi;
 
 // MQTT Broker
-const char *mqtt_broker = "broker.emqx.io";
+const char *mqtt_broker = "test.mosquitto.org";
 const char *topic = "pkm/alarm";
-const char *mqtt_username = "ivan";
-const char *mqtt_password = "public";
+const char *mqtt_username = "";
+const char *mqtt_password = "";
 const int mqtt_port = 1883;
 
 // Pin
